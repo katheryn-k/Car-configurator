@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header" id="header">
+    <header class="header flex-grow-1" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -57,7 +57,85 @@
     <!-- /header -->
 
     <!-- main -->
-    <main class="main" id="main"></main>
+    <main class="main flex-grow-1" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-10 col-sm-12">
+                    <div class="main__model-description model-description position-relative float-right">
+                        <header class="main__model-description__header">
+                            <h1 class="h3">
+                                Hundai Solaris
+                            </h1>
+                        </header>
+                        <div class="main__model-description__text h6 font-weight-bold text-justify" id="model__Spec"></div>
+                        <div class="main__model-description__price d-flex flex-column h4 font-weight-bold">
+                            <span class="main__model-description_uah" id="model__uah">от 250 552 UAH</span>
+                            <span class="main__model-description_dol" id="model__usd">до 393 944 UAH</span>  
+                        </div>
+                        <button class="main__model-description__btn font-weight-bold text-white" type="submit">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 main__img__box d-flex justify-content-center align-items-center" id="main__imgHolder">
+                    <img class="main__img" src="./assets/images/cars/white.png" alt="Автомобиль">
+                </div>
+            </div>
+            <form class="main__form" id="autoForm">
+                <h2 class="main__form__title">
+                    Настрой авто для себя
+                </h2>
+                <hr>
+                <div class="row main__form__box d-flex justify-content-around">
+                    <div class="col-lg-3">
+                        <h3 class="main__form__subtitle font-weight-bold"> 
+                            Двигатель
+                        </h3>
+                        <div class="main__form__block">
+                            <input type="radio" name="engine" id="engine1400" value="250552" checked>
+                            <label for="engine1400">1.4 л (100 л.с.)</label>
+                        </div>
+                        <div class="main__form__block">
+                            <input type="radio" name="engine" id="engine1600" value="295651">
+                            <label for="engine1600">1.6 л (123 л.с.)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="main__form__subtitle font-weight-bold">
+                            Коробка передач
+                        </h3>
+                        <div class="main__form__block">
+                            <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+                            <label for="transmission6MT">Ручная, 6 ступеней (6 МТ)</label>
+                        </div>
+                        <div class="main__form__block">
+                            <input type="radio" name="transmission" id="transmission6AT" value="48183">
+                            <label for="transmission6AT">Автомат, 6 ступеней (6 АТ)</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="main__form__subtitle font-weight-bold">
+                            Пакет (дополнительные опции)
+                        </h3>
+                        <div class="main__form__block">
+                            <input type="radio" name="package" id="packageActive" value="0" checked>
+                            <label for="packageActive">Active</label>
+                        </div>
+                        <div class="main__form__block">
+                            <input type="radio" name="package" id="packageActivePlus" value="327645">
+                            <label for="packageActivePlus">Active Plus (кондиционер)</label>
+                        </div>
+                        <div class="main__form__block">
+                            <input type="radio" name="package" id="packageComfort" value="50110">
+                            <label for="packageComfort">Comfort (климатконтроль)</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
     <!-- /main -->
 
     <!-- footer -->
