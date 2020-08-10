@@ -23,3 +23,17 @@
 /* main colors */
 $header-bg-color: #0f397161;
 $footer-bg-color: #0f3a71;
+
+body {
+    font-family: 'Hyundai Sans Text Office', sans-serif;
+}
+.header {
+    background: $header-bg-color;
+    &__logo__img {
+        width: 70px;
+    }
+    &__btn__toggler:focus {
+        outline: none;
+        border: none;
+    }
+}

@@ -16,4 +16,20 @@
 }
 
 /* main colors */
+body {
+  font-family: 'Hyundai Sans Text Office', sans-serif;
+}
+
+.header {
+  background: #0f397161;
+}
+
+.header__logo__img {
+  width: 70px;
+}
+
+.header__btn__toggler:focus {
+  outline: none;
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
