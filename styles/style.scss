@@ -23,17 +23,98 @@
 /* main colors */
 $header-bg-color: #0f397161;
 $footer-bg-color: #0f3a71;
+$cars-colors: (
+    black: var(--dark),
+    red: var(--red),
+    orange: var(--orange),
+    blue: var(--blue),
+    white: var(--white),
+    gray: var(--gray),
+    metallic: #a9a9a9
+);
 
 body {
     font-family: 'Hyundai Sans Text Office', sans-serif;
-}
-.header {
-    background: $header-bg-color;
-    &__logo__img {
-        width: 70px;
+    /* header */
+    .header {
+        background: $header-bg-color;
+        &__logo__img {
+            width: 70px;
+        }
+        &__btn__toggler:focus {
+            outline: none;
+            border: none;
+        }
     }
-    &__btn__toggler:focus {
-        outline: none;
-        border: none;
+    /* end of header */
+
+    /* main */
+    .main {
+        &__model-description {
+            margin: 2em 0;
+            &__header {
+                margin: 0.2em 0;
+            }
+            &__text {
+                width: 90%;
+                line-height: 2
+            }
+            &__price {
+                span {
+                    margin: 0.2em 0;
+                    color: $footer-bg-color;
+                }
+            }
+            &__btn {
+                width: 10em;
+                margin: 1em 0;
+                padding: 0.8em;
+                background: $footer-bg-color;
+                outline: none;
+                border: none;
+                opacity: 1;
+                transition: all 0.3s ease;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        &__img {
+            max-width: 90%;
+            max-height: 100%;
+            object-fit: cover;
+            &__box {
+                background: url(../assets/images/logo/solaris-bg.svg) center center / cover no-repeat;
+            }
+        }
+        &__form {
+            &__box {
+                margin: 40px 0;
+            }
+            &__subtitle {
+                margin: 1em 0;
+                font-size: 1.2em;
+            }
+            &__block {
+                margin: 0.5em 0;
+            }
+        }
+        &__color-box {
+            margin: 5em 0 15em 0;
+            &__item {
+                position: relative;
+                width: 4em;
+                height: 4em;
+                margin: 30px 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                @each $car, $color in $cars-colors {
+                    &_#{$car} {
+                        background: $color;
+                    }
+                }
+            }
+        }
     }
+    /* end of main */
 }
