@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* fonts */
+@font-face {
+  font-family: 'Hyundai Sans Text Office';
+  src: local("Hyundai Sans Head Office"), local("HyundaiSansHeadOffice-Regular"), url("../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.eot"), url("../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.woff") format("woff"), url("../assets/fonts/HyundaiSans/HyundaiSansTextOffice-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS / Regular */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Text Office';
+  src: local("Hyundai Sans Text Office Bold"), local("HyundaiSansHeadOffice-Bold"), url("../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.eot"), url("../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.woff") format("woff"), url("../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS / Bold */
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* main colors */
+/*# sourceMappingURL=style.css.map */

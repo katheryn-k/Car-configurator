@@ -1,0 +1,25 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Hyundai Sans Text Office';
+    src: local('Hyundai Sans Head Office'), local('HyundaiSansHeadOffice-Regular'), /* Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.eot'), /* IE9 Compat Modes / Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.woff') format('woff'), /* Pretty Modern Browsers / Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansTextOffice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS / Regular */
+    font-weight: normal;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: 'Hyundai Sans Text Office';
+    src: local('Hyundai Sans Text Office Bold'), local('HyundaiSansHeadOffice-Bold'), /* Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.eot'), /* IE9 Compat Modes / Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.woff') format('woff'), /* Pretty Modern Browsers / Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.ttf')  format('truetype'); /* Safari, Android, iOS / Bold */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* main colors */
+$header-bg-color: #0f397161;
+$footer-bg-color: #0f3a71;
