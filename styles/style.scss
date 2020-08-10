@@ -117,4 +117,43 @@ body {
         }
     }
     /* end of main */
+
+    /* footer */
+    .footer {
+        background: $footer-bg-color;
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+        &__feature {
+            padding: 3em 0;
+            &__logo {
+                width: 70px;
+            }
+            &__phone {
+                font-size: 1.5em;
+            }
+            &__icon {
+                margin-right: 10px;
+            }
+            &__list__item {
+                margin: 10px 0;
+            }
+        }
+        &__social__list {
+            padding: 15px 0;
+        }
+        &__social__icon {
+            width: 1.5em;
+           
+        }
+    }
+    /* end of footer */
 }

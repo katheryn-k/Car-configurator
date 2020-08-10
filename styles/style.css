@@ -22,6 +22,8 @@ body {
   /* end of header */
   /* main */
   /* end of main */
+  /* footer */
+  /* end of footer */
 }
 
 body .header {
@@ -134,5 +136,52 @@ body .main__color-box__item_gray {
 
 body .main__color-box__item_metallic {
   background: #a9a9a9;
+}
+
+body .footer {
+  background: #0f3a71;
+}
+
+body .footer a {
+  text-decoration: none;
+}
+
+body .footer li {
+  list-style: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+body .footer li:hover {
+  color: #fff !important;
+}
+
+body .footer__feature {
+  padding: 3em 0;
+}
+
+body .footer__feature__logo {
+  width: 70px;
+}
+
+body .footer__feature__phone {
+  font-size: 1.5em;
+}
+
+body .footer__feature__icon {
+  margin-right: 10px;
+}
+
+body .footer__feature__list__item {
+  margin: 10px 0;
+}
+
+body .footer__social__list {
+  padding: 15px 0;
+}
+
+body .footer__social__icon {
+  width: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */
