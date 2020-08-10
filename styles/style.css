@@ -24,6 +24,7 @@ body {
   /* end of main */
   /* footer */
   /* end of footer */
+  /* @media */
 }
 
 body .header {
@@ -127,7 +128,7 @@ body .main__color-box__item_blue {
 }
 
 body .main__color-box__item_white {
-  background: var(--white);
+  background: #dddfe6;
 }
 
 body .main__color-box__item_gray {
@@ -183,5 +184,17 @@ body .footer__social__list {
 
 body .footer__social__icon {
   width: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  body .main__color-box__item {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    margin: 10px 5px;
+  }
+  body .footer__feature__list_lg {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ $cars-colors: (
     red: var(--red),
     orange: var(--orange),
     blue: var(--blue),
-    white: var(--white),
+    white: #dddfe6,
     gray: var(--gray),
     metallic: #a9a9a9
 );
@@ -156,4 +156,19 @@ body {
         }
     }
     /* end of footer */
+
+    /* @media */
+    @media screen and (max-width: 500px) {
+        .main__color-box__item {
+            position: relative;
+            width: 2em;
+            height: 2em;
+            margin: 10px 5px;
+        }
+        .footer__feature__list_lg {
+            display: none;
+        }
+    }
 }
+
+
