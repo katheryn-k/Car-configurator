@@ -1,0 +1,166 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Hyundai Sans Text Office';
+    src: local('Hyundai Sans Head Office'), local('HyundaiSansHeadOffice-Regular'), /* Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.eot'), /* IE9 Compat Modes / Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Regular.woff') format('woff'), /* Pretty Modern Browsers / Regular */
+         url('../assets/fonts/HyundaiSans/HyundaiSansTextOffice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS / Regular */
+    font-weight: normal;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: 'Hyundai Sans Text Office';
+    src: local('Hyundai Sans Text Office Bold'), local('HyundaiSansHeadOffice-Bold'), /* Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.eot'), /* IE9 Compat Modes / Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.woff') format('woff'), /* Pretty Modern Browsers / Bold */
+         url('../assets/fonts/HyundaiSans/HyundaiSansHeadOffice-Bold.ttf')  format('truetype'); /* Safari, Android, iOS / Bold */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* main colors */
+$header-bg-color: #0f397161;
+$footer-bg-color: #0f3a71;
+$cars-colors: (
+    black: var(--dark),
+    red: var(--red),
+    orange: var(--orange),
+    blue: var(--blue),
+    white: #dddfe6,
+    gray: var(--gray),
+    metallic: #a9a9a9
+);
+
+body {
+    font-family: 'Hyundai Sans Text Office', sans-serif;
+    .header {
+        background: $header-bg-color;
+        &__logo__img {
+            width: 70px;
+        }
+        &__btn__toggler:focus {
+            outline: none;
+            border: none;
+        }
+    }
+    .main {
+        &__model-description {
+            margin: 2em 0;
+            &__header {
+                margin: 0.2em 0;
+            }
+            &__text {
+                width: 90%;
+                line-height: 2
+            }
+            &__price {
+                span {
+                    margin: 0.2em 0;
+                    color: $footer-bg-color;
+                }
+            }
+            &__btn {
+                width: 10em;
+                margin: 1em 0;
+                padding: 0.8em;
+                background: $footer-bg-color;
+                outline: none;
+                border: none;
+                opacity: 1;
+                transition: all 0.3s ease;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        &__img {
+            max-width: 90%;
+            max-height: 100%;
+            object-fit: cover;
+            &__box {
+                background: url(../assets/images/logo/solaris-bg.svg) center center / cover no-repeat;
+            }
+        }
+        &__form {
+            &__box {
+                margin: 40px 0;
+            }
+            &__subtitle {
+                margin: 1em 0;
+                font-size: 1.2em;
+            }
+            &__block {
+                margin: 0.5em 0;
+            }
+        }
+        &__color-box {
+            margin: 5em 0 15em 0;
+            &__item {
+                position: relative;
+                width: 4em;
+                height: 4em;
+                margin: 30px 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                @each $car, $color in $cars-colors {
+                    &_#{$car} {
+                        background: $color;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        background: $footer-bg-color;
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+        &__feature {
+            padding: 3em 0;
+            &__logo {
+                width: 70px;
+            }
+            &__phone {
+                font-size: 1.5em;
+            }
+            &__icon {
+                margin-right: 10px;
+            }
+            &__list__item {
+                margin: 10px 0;
+            }
+        }
+        &__social__list {
+            padding: 15px 0;
+        }
+        &__social__icon {
+            width: 1.5em;
+           
+        }
+    }
+    
+    /* @media */
+    @media screen and (max-width: 500px) {
+        .main__color-box__item {
+            position: relative;
+            width: 2em;
+            height: 2em;
+            margin: 10px 5px;
+        }
+        .footer__feature__list_lg {
+            display: none;
+        }
+    }
+}
+
+
