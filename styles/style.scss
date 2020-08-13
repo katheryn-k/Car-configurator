@@ -35,8 +35,6 @@ $cars-colors: (
 
 body {
     font-family: 'Hyundai Sans Text Office', sans-serif;
-    
-    /* header */
     .header {
         background: $header-bg-color;
         &__logo__img {
@@ -47,9 +45,6 @@ body {
             border: none;
         }
     }
-    /* end of header */
-
-    /* main */
     .main {
         &__model-description {
             margin: 2em 0;
@@ -117,9 +112,6 @@ body {
             }
         }
     }
-    /* end of main */
-
-    /* footer */
     .footer {
         background: $footer-bg-color;
         a {
@@ -156,8 +148,7 @@ body {
            
         }
     }
-    /* end of footer */
-
+    
     /* @media */
     @media screen and (max-width: 500px) {
         .main__color-box__item {
