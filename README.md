@@ -8,7 +8,7 @@ Use:
 
 - jQuery
 
-- [PrivatBank]: https://api.privatbank.ua/
+- [PrivatBank API](https://api.privatbank.ua/)
 
   
 
